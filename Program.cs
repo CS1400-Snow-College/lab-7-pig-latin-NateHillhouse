@@ -6,19 +6,46 @@ Lab 7 - Pig Latin Encoder
 
 
 Console.Clear();
-Console.WriteLine("Welcome to the Pig Latin Encoder! This will take your message and encode it.")
+Console.WriteLine("Welcome to the Pig Latin Encoder! This will take your message and encode it.");
+Console.WriteLine();
+Console.Write("What message would you like to encode? ");
+string? message = Console.ReadLine();
+
+char[] vowel = { 'a', 'e', 'i', 'o', 'u' };
+
+string[] splitMessage = message.Split();
+foreach (string word in splitMessage) PigLatin(word);
+
+void PigLatin(string word)
+{
+    bool startsWithVowel = false, endsWithVowel = false;
+    foreach (char item in vowel) 
+    {
+        if (word.StartsWith(item)) startsWithVowel = true;
+        if (word.EndsWith(item)) endsWithVowel = true;
+    }
+
+    if (startsWithVowel && endsWithVowel) word += "way";
+    else if (startsWithVowel) word += "ay";
+    else
+    {
+        string[] splitWord = word.Split();
+    }
+
+
+
+    Console.Write(word);
+}
 
 
 
 
 /*
-comment Add a comment to the top of your source code with the names of the authors, the date, and the name of the lab. 
-(Remember to commit the change.)
+1) Pig Latin rules: If your word starts with a consonant, or a consonant cluster, move the cluster to the end and add AY, so Frank becomes ankfray.
+ If your word begins with a vowel and ends with a vowel just add 'way', so apple becomes appleway
 
-greeting Print a greeting and description of the program to the user. 
-(Remember to commit the change.)
-
-Collect a string: Get a string from the user to manipulate, then split it into an array of words.
+2) Cryptogram rules: find a shift amount (you can just assign say '5' or you can use a random number generator) 
+and slide every character by that far on the ascii scale, so if we choose 5, apple would become fuuqj, and zoo would become ett.
 
 Convert each word into Pig Latin: When looking at the first character of each word, 
 consider the command 'contains' it may save you some trouble

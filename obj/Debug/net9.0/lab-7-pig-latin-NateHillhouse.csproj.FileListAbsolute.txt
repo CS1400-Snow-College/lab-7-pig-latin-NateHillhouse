@@ -1,0 +1,15 @@
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\bin\Debug\net9.0\lab-7-pig-latin-NateHillhouse.exe
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\bin\Debug\net9.0\lab-7-pig-latin-NateHillhouse.deps.json
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\bin\Debug\net9.0\lab-7-pig-latin-NateHillhouse.runtimeconfig.json
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\bin\Debug\net9.0\lab-7-pig-latin-NateHillhouse.dll
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\bin\Debug\net9.0\lab-7-pig-latin-NateHillhouse.pdb
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.AssemblyInfoInputs.cache
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.AssemblyInfo.cs
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.csproj.CoreCompileInputs.cache
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.sourcelink.json
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.dll
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\refint\lab-7-pig-latin-NateHillhouse.dll
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.pdb
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\lab-7-pig-latin-NateHillhouse.genruntimeconfig.cache
+C:\Users\nhill_mliw72r\Documents\Code_Projects\my-code-dir\lab-7-pig-latin-NateHillhouse\obj\Debug\net9.0\ref\lab-7-pig-latin-NateHillhouse.dll
