@@ -2,6 +2,14 @@
 Nathan Hillhouse
 10/21/2025
 Lab 7 - Pig Latin Encoder
+*/
+
+
+Console.Clear();
+Console.WriteLine("Welcome to the Pig Latin Encoder! This will take your message and encode it.")
+
+
+
 
 /*
 comment Add a comment to the top of your source code with the names of the authors, the date, and the name of the lab. 
