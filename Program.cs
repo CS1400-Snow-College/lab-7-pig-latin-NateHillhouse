@@ -1,5 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+Nathan Hillhouse
+10/21/2025
+Lab 7 - Pig Latin Encoder
 
 /*
 comment Add a comment to the top of your source code with the names of the authors, the date, and the name of the lab. 
@@ -24,3 +26,4 @@ letter = (char)((int)letter + 1); // if letter is an 'a', it will become a 'b'
 
 Print out the offset phrase
 */
+
