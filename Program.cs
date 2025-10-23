@@ -11,30 +11,43 @@ Console.WriteLine();
 Console.Write("What message would you like to encode? ");
 string? message = Console.ReadLine();
 
-char[] vowel = { 'a', 'e', 'i', 'o', 'u' };
 
 string[] splitMessage = message.Split();
-foreach (string word in splitMessage) PigLatin(word);
+for (int word = 0; word < splitMessage.Length; word ++) splitMessage[word] = PigLatin(splitMessage[word]);
 
-void PigLatin(string word)
+bool IsVowel(char letter)
 {
-    bool startsWithVowel = false, endsWithVowel = false;
-    foreach (char item in vowel) 
-    {
-        if (word.StartsWith(item)) startsWithVowel = true;
-        if (word.EndsWith(item)) endsWithVowel = true;
-    }
 
+    char[] vowel = { 'a', 'e', 'i', 'o', 'u' };
+    foreach (char character in vowel) if (character == letter) return true;
+    return false;
+}
+
+string PigLatin(string word)
+{
+    bool startsWithVowel = IsVowel(word[0]);
+    bool endsWithVowel = IsVowel(word[word.Length-1]);
     if (startsWithVowel && endsWithVowel) word += "way";
     else if (startsWithVowel) word += "ay";
     else
     {
-        string[] splitWord = word.Split();
+        for (int i = 0; i < word.Length; i++)
+        {
+            string characters = "";
+            if (!IsVowel(word[0]))
+            {
+                characters += word[0];
+                //word -= word[i];
+                word = word.Substring(1, word.Length - 1);
+                word += characters;
+            }
+            else break;
+        }
+        word += "ay";
     }
+    Console.WriteLine(word);
 
-
-
-    Console.Write(word);
+    return word;
 }
 
 
