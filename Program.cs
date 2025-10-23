@@ -13,7 +13,14 @@ string? message = Console.ReadLine();
 
 
 string[] splitMessage = message.Split();
-for (int word = 0; word < splitMessage.Length; word ++) splitMessage[word] = PigLatin(splitMessage[word]);
+for (int word = 0; word < splitMessage.Length; word++) splitMessage[word] = PigLatin(splitMessage[word]);
+    
+Random rand = new Random();
+int key = rand.Next(1, 26);
+
+for (int word = 0; word < splitMessage.Length; word++) splitMessage[word] = Encode(splitMessage[word], key);
+
+for (int word = 0; word < splitMessage.Length; word++) Console.Write("Your Code is: " + splitMessage[word] + " ");
 
 bool IsVowel(char letter)
 {
@@ -45,12 +52,25 @@ string PigLatin(string word)
         }
         word += "ay";
     }
-    Console.WriteLine(word);
-
     return word;
 }
 
-
+string Encode(string word, int key)
+{
+    string newword = "";
+    for (int item = 0; item < word.Length; item++)
+    {
+        char letter = word[item];
+        int character = letter + key;
+        if (character > 122)
+        {
+            character = character-26;
+        }
+        newword += ((char)character).ToString();
+        Console.WriteLine(newword);
+    }
+    return newword;
+}
 
 
 /*
