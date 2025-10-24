@@ -19,8 +19,9 @@ Random rand = new Random();
 int key = rand.Next(1, 26);
 
 for (int word = 0; word < splitMessage.Length; word++) splitMessage[word] = Encode(splitMessage[word], key);
-
-for (int word = 0; word < splitMessage.Length; word++) Console.Write("Your Code is: " + splitMessage[word] + " ");
+Console.WriteLine();
+Console.Write("Your Code is: "); 
+for (int word = 0; word < splitMessage.Length; word++) Console.Write(splitMessage[word] + " ");
 
 bool IsVowel(char letter)
 {
@@ -34,8 +35,8 @@ string PigLatin(string word)
 {
     bool startsWithVowel = IsVowel(word[0]);
     bool endsWithVowel = IsVowel(word[word.Length-1]);
-    if (startsWithVowel && endsWithVowel) word += "way";
-    else if (startsWithVowel) word += "ay";
+    //if (startsWithVowel && endsWithVowel) word += "way";
+    if (startsWithVowel) word += "way";
     else
     {
         for (int i = 0; i < word.Length; i++)
@@ -52,6 +53,7 @@ string PigLatin(string word)
         }
         word += "ay";
     }
+    Console.Write(word + " ");
     return word;
 }
 
@@ -67,7 +69,7 @@ string Encode(string word, int key)
             character = character-26;
         }
         newword += ((char)character).ToString();
-        Console.WriteLine(newword);
+        //Console.WriteLine(newword);
     }
     return newword;
 }
